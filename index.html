@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>when did we become together? 💞</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="entry-page">
+    <div class="entry-container">
+        <h1>when did we become together? 💞</h1>
+        <p>enter the date we started our love story</p>
+        <input type="date" id="dateInput">
+        <div class="entry-actions">
+            <button onclick="checkDate()" id="enterBtn">enter</button>
+            <p id="entryMsg" class="entry-msg"></p>
+        </div>
+        <small class="tip">Hint: format ray 3am-chhar-nhar(ken arftch kifeh akhtar nhar b date picker))</small>
+    </div>
+    <script>
+        function checkDate(){
+            dateshiha="2025-08-01";
+            userDate = document.getElementById("dateInput").value;;
+            msg = document.getElementById("message");
+
+            if(userDate==dateshiha){
+                window.location.href="main.html"
+            }
+            else{
+                msg.textContent="awed mara okhraa ml❤️(bch nodhrbk)";
+                msg.classList.add('shake');
+                setTimeout(() => msg.classList.remove('shake'), 600);}
+
+            
+        }
+        
+    </script>
+</body>
+</html>
