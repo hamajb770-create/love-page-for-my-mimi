@@ -8,19 +8,21 @@
 </head>
 <body class="main-page">
     <div class="hearts"></div>
-    <header class="top-bar"></header>
-    <div class="player"></div>
-    <audio id="song" src="your-special-q.mp3""></audio>
-    <button id="playBtn">Play</button>
-    <button id="pauseBtn">Pause</button>
-    <input id="progress" type="range" min="0" max="100" value="0" />
-    <span id="timeLabel">00:00 / 00:00</span>
-  </div>
-  <div class="timer" aria-live="polite">
-    <strong>We've been together for</strong>
-    <div id="countdown">0d 0h 0m 0s</div>
-  </div>
-</header>
+    <header class="top-bar">
+      <div class="player">
+        <audio id="song" src="your-special-q.mp3" autoplay></audio>
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <input id="progress" type="range" min="0" max="100" value="0" />
+        <span id="timeLabel">00:00 / 00:00</span>
+      </div>
+      <div class="timer" aria-live="polite">
+        <strong>We've been together for</strong>
+        <div id="countdown">0d 0h 0m 0s</div>
+      </div>
+    </header>
+    
+
 
 
 <main class="content">
